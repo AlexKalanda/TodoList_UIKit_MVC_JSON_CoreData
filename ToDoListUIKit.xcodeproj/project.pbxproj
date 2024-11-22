@@ -18,6 +18,7 @@
 		848B73732CEFE09200F762E8 /* Ext+TF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848B73722CEFE09200F762E8 /* Ext+TF.swift */; };
 		848B73752CEFE12900F762E8 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848B73742CEFE12900F762E8 /* EditView.swift */; };
 		848B73772CEFE17800F762E8 /* EditController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848B73762CEFE17800F762E8 /* EditController.swift */; };
+		848B74342CF0F9C100F762E8 /* Ext+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848B74332CF0F9C100F762E8 /* Ext+String.swift */; };
 		849F246B2CE73DE900BA93B2 /* ToDoListUIKit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 849F24652CE73DE900BA93B2 /* ToDoListUIKit.xcdatamodeld */; };
 		849F24792CE73EC100BA93B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849F24722CE73EC100BA93B2 /* AppDelegate.swift */; };
 		849F247A2CE73EC100BA93B2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849F24772CE73EC100BA93B2 /* SceneDelegate.swift */; };
@@ -39,6 +40,7 @@
 		848B73722CEFE09200F762E8 /* Ext+TF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+TF.swift"; sourceTree = "<group>"; };
 		848B73742CEFE12900F762E8 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 		848B73762CEFE17800F762E8 /* EditController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditController.swift; sourceTree = "<group>"; };
+		848B74332CF0F9C100F762E8 /* Ext+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+String.swift"; sourceTree = "<group>"; };
 		849F24442CE73D9A00BA93B2 /* ToDoListUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoListUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		849F24682CE73DE900BA93B2 /* ToDoListUIKit.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ToDoListUIKit.xcdatamodel; sourceTree = "<group>"; };
 		849F24722CE73EC100BA93B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 				849F24E42CEB721E00BA93B2 /* Ext+Color.swift */,
 				848B73702CEFCF1A00F762E8 /* Ext+Lable.swift */,
 				848B73722CEFE09200F762E8 /* Ext+TF.swift */,
+				848B74332CF0F9C100F762E8 /* Ext+String.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 				849F24E52CEB721E00BA93B2 /* Ext+Color.swift in Sources */,
 				848B73772CEFE17800F762E8 /* EditController.swift in Sources */,
 				849F248F2CE7418700BA93B2 /* CoreManager.swift in Sources */,
+				848B74342CF0F9C100F762E8 /* Ext+String.swift in Sources */,
 				848B736F2CEF6EFF00F762E8 /* NewTodoView.swift in Sources */,
 				848B735D2CEF690700F762E8 /* TodoCell.swift in Sources */,
 				848B735E2CEF690700F762E8 /* DetailView.swift in Sources */,

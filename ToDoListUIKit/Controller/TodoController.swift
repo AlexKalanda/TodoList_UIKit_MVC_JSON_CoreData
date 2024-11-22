@@ -90,7 +90,6 @@ extension TodoController: UITableViewDataSource {
         let currentTodo = coreManager.todos[indexPath.row]
         cell.setupCell(with: currentTodo, cellIndex: indexPath.row)
         cell.buttonComplete.addTarget(self, action: #selector (complitedPressed), for: .touchUpInside)
-        
         return cell
     }
 }
@@ -103,6 +102,15 @@ extension TodoController: UITableViewDelegate {
         vc.todo = todo
         navigationController?.pushViewController(vc, animated: true)
     }
+    //MARK: Динамическое высота кастомной ячейки
+    func tableView(_ tableView: UITableView,
+                   heightForRowAt indexPath: IndexPath) -> CGFloat {
+        let todo = coreManager.todos[indexPath.row]
+        let text = todo.desc ?? ""
+        let height = text.textHeight(frameWidth: view.frame.width,
+                                     font: .systemFont(ofSize: 14))
+        return 70 + height
+    }
     // MARK:  Контекстное меню
     func tableView(_ tableView: UITableView, contextMenuConfigurationForRowAt indexPath: IndexPath, point: CGPoint) -> UIContextMenuConfiguration? {
         UIContextMenuConfiguration(identifier: nil, previewProvider: nil) { action in
@@ -113,6 +121,7 @@ extension TodoController: UITableViewDelegate {
                 vc.todo = self.coreManager.todos[indexPath.row]
                 self.navigationController?.pushViewController(vc, animated: true)
             }
+            //поделиться
             let share = UIAction(title: "Поделиться",
                                  image: UIImage(systemName: "square.and.arrow.up")) { action in
                 

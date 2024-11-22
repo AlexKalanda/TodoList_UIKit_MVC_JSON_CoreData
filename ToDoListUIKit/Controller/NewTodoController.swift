@@ -24,7 +24,7 @@ class NewTodoController: UIViewController {
     @objc func saveAction() {
         guard let title = mainView.titleTF.text,
               let description = mainView.descriptionTF.text else { return }
-        guard !title.isEmpty && !description.isEmpty else {
+        guard !title.isEmpty else {
             navigationController?.popViewController(animated: true);
             return
         }

@@ -46,8 +46,8 @@ final class DetailView: UIView {
         NSLayoutConstraint.activate([
             stackView.topAnchor.constraint(equalTo: layoutMarginsGuide.topAnchor),
             stackView.bottomAnchor.constraint(equalTo: bottomAnchor),
-            stackView.rightAnchor.constraint(equalTo: rightAnchor),
-            stackView.leftAnchor.constraint(equalTo: leftAnchor)
+            stackView.rightAnchor.constraint(equalTo: rightAnchor,constant: -12),
+            stackView.leftAnchor.constraint(equalTo: leftAnchor,constant: 12)
         ])
     }
     

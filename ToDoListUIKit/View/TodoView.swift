@@ -24,10 +24,6 @@ final class TodoView: UIView {
     func setViews() {
         self.backgroundColor = UIColor.color(light: .white, dark: .black)
         tableView.register(TodoCell.self, forCellReuseIdentifier: TodoCell.reuseID)
-        //размер ячейки высчитывался автоматически не работает ???
-        //tableView.rowHeight = UITableView.automaticDimension
-        //tableView.estimatedRowHeight = 100
-        tableView.rowHeight = 100
         bottonView.backgroundColor = UIColor.color(light: .placeholderText,
                                                    dark: .black)
         bottonView.alpha = 0.8

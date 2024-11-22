@@ -67,8 +67,8 @@ import UIKit
         addSubview(stackView)
         NSLayoutConstraint.activate([
             stackView.topAnchor.constraint(equalTo: layoutMarginsGuide.topAnchor),
-            stackView.leadingAnchor.constraint(equalTo: leadingAnchor),
-            stackView.trailingAnchor.constraint(equalTo: trailingAnchor)
+            stackView.leadingAnchor.constraint(equalTo: leadingAnchor,constant: 12),
+            stackView.trailingAnchor.constraint(equalTo: trailingAnchor,constant: -12)
         ])
     }
     

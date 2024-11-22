@@ -28,11 +28,8 @@ final class TodoCell: UITableViewCell {
         titleLabel.font = .systemFont(ofSize: 16)
         titleLabel.numberOfLines = 0
         titleLabel.lineBreakMode = .byWordWrapping
-        
         descriptionLabel.font = .systemFont(ofSize: 12)
         descriptionLabel.numberOfLines = 2
-        descriptionLabel.lineBreakMode = .byWordWrapping
-        
         dateLabel.font = .systemFont(ofSize: 12)
         dateLabel.textColor = .gray
     }
