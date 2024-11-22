@@ -130,7 +130,6 @@ extension TodoController: UITableViewDelegate {
                     self.coreManager.fetchSearchedTodos(searchText: self.mainView.searchController.searchBar.text ?? "")
                 }
                 
-                self.getData()
                 self.updataFooter()
                 self.mainView.tableView.reloadData()
             }
